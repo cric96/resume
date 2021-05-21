@@ -1,0 +1,43 @@
+[
+	{
+		"id": "http://zotero.org/users/local/f7B1Zs1T/items/T643LBH9",
+		"type": "article-journal"
+	},
+	{
+		"id": "http://zotero.org/users/local/f7B1Zs1T/items/YHE3C94C",
+		"type": "article-journal"
+	},
+	{
+		"id": "http://zotero.org/users/local/f7B1Zs1T/items/WI29YLHC",
+		"type": "article-journal",
+		"abstract": "Research and technology developments on autonomous agents and autonomic computing promote a vision of artificial systems that are able to resiliently manage themselves and autonomously deal with issues at runtime in dynamic environments. Indeed, autonomy can be leveraged to unburden humans from mundane tasks (cf. driving and autonomous vehicles), from the risk of operating in unknown or perilous environments (cf. rescue scenarios), or to support timely decision-making in complex settings (cf. data-centre operations). Beyond the results that individual autonomous agents can carry out, a further opportunity lies in the collaboration of multiple agents or robots. Emerging macro-paradigms provide an approach to programming whole collectives towards global goals. Aggregate computing is one such paradigm, formally grounded in a calculus of computational fields enabling functional composition of collective behaviours that could be proved, under certain technical conditions, to be self-stabilising. In this work, we address the concept of collective autonomy, i.e., the form of autonomy that applies at the level of a group of individuals. As a contribution, we define an agent control architecture for aggregate multi-agent systems, discuss how the aggregate computing framework relates to both individual and collective autonomy, and show how it can be used to program collective autonomous behaviour. We exemplify the concepts through a simulated case study, and outline a research roadmap towards reliable aggregate autonomy.",
+		"container-title": "Journal of Sensor and Actuator Networks",
+		"DOI": "10.3390/jsan10020027",
+		"ISSN": "2224-2708",
+		"issue": "2",
+		"title": "A Programming Approach to Collective Autonomy",
+		"URL": "https://www.mdpi.com/2224-2708/10/2/27",
+		"volume": "10",
+		"author": [
+			{
+				"family": "Casadei",
+				"given": "Roberto"
+			},
+			{
+				"family": "Aguzzi",
+				"given": "Gianluca"
+			},
+			{
+				"family": "Viroli",
+				"given": "Mirko"
+			}
+		],
+		"issued": {
+			"date-parts": [
+				[
+					"2021"
+				]
+			]
+		}
+	}
+]

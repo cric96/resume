@@ -1,3 +1,167 @@
+# Page settings
+
 baseURL = "http://example.org/"
-languageCode = "en-us"
-title = "My New Hugo Site"
+languageCode = "en"
+title = "GA Resume"
+theme = ["hugo-devresume-theme", "hugo-cite"]
+
+[params]
+    author = "Gianluca Aguzzi"
+    description = "Dev resume"
+
+
+    primaryColor = "#f57c00"
+    textPrimaryColor = "#292929"
+
+    [params.profile]
+        enable = true
+        name = "Gianluca Aguzzi"
+        tagline = "PhD Student"
+        avatar = "avatar.png"
+
+    [params.contact]
+        enable = true
+        location = "Cesena"
+
+        [[params.contact.list]]
+        icon = "fas fa-envelope-square"
+        url = "mailto:#"
+        text = "gianluca.aguzzi@unibo.it"
+        [[params.contact.list]]
+        icon = "fas fa-globe"
+        url = "https://cric96.github.io/"
+        text = "https://cric96.github.io/"
+
+    [params.skills]
+        enable = true
+
+        [[params.skills.list]]
+        title = "Technical"
+        [[params.skills.list.items]]
+        details = "JavaScript/Angular/React/Vue"
+        [[params.skills.list.items]]
+        details = "Python/Ruby/PHP"
+        [[params.skills.list.items]]
+        details = "Node.js/ASP.NET"
+        [[params.skills.list.items]]
+        details = "PostgreSQL/MySQL"
+        [[params.skills.list.items]]
+        details = "Object-oriented design"
+        [[params.skills.list.items]]
+        details = "Design and implement database structures"
+        [[params.skills.list.items]]
+        details = "Lead and deliver complex software systems"
+
+        [[params.skills.list]]
+        title = "Professional"
+        [[params.skills.list.items]]
+        details = "Effective communication"
+        [[params.skills.list.items]]
+        details = "Team player"
+        [[params.skills.list.items]]
+        details = "Strong problem solver"
+        [[params.skills.list.items]]
+        details = "Good time management"
+
+    [params.education]
+        enable = true
+
+        [[params.education.list]]
+        degree = "MSc in Computer Science and Software Engineering"
+        university = "Alma Mater Studiorum"
+        dates = "2018 - 2020"
+        vote = "110 cum lode"
+        [[params.education.list]]
+        degree = "BSc in Computer Science and Software Engineering"
+        university = "Alma Mater Studiorum"
+        dates = "2018 - 2020"
+        vote = "110 cum lode"
+        [[params.education.list]]
+        degree = "BSc in Computer Science and Software Engineering"
+        university = "Alma Mater Studiorum"
+        dates = "2018 - 2020"
+        vote = "110 cum lode"
+
+
+    [params.languages]
+        enable = true
+
+        [[params.languages.list]]
+        name = "Italian"
+        level = "Native"
+        [[params.languages.list]]
+        name = "English"
+        level = "Professional"
+
+    [params.interests]
+        enable = true
+
+        [[params.interests.list]]
+        name = "Running"
+        [[params.interests.list]]
+        name = "Gaming"
+        [[params.interests.list]]
+        name = "Technology"
+        [[params.interests.list]]
+        name = "Travelling"
+
+    [params.summary]
+        enable = true
+        text = "Summarise your career here. Donec quam felis, ultricies nec, pellentesque eu. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.  Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh."
+
+    [params.experience]
+        enable = true
+
+        [[params.experience.list]]
+        title = "Teacher in coding course"
+        dates = "2019 - 2019"
+        company = "Criad Coding"
+        details = "As primary school teacher, I teached to child the main computational thinking, namely is a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It was such a great experince in which I improved my speaking and storytelling capabilities."
+
+        [[params.experience.list]]
+        title = "Tutor in coding training course for teachers"
+        dates = "2019 - 2019"
+        company = "Criad Coding"
+        details = "In this experience, I paired a professional teacher in classes composed by a different people kind, either in age or in background. This work help me to improve my improvisation and team work capabilities "
+
+    [params.projects]
+        enable = true
+
+        [[params.projects.list]]
+        title = "ScaFi Web"
+        meta = "Open Source"
+        tagline = "ScaFi Web (https://github.com/scafi/scafi-web) is an online playground used to facilitate aggregate programming (i.e. a novel way to program collective adaptive system, my area of interest). It was my master thesis work and then it refined for research reason. Currently the system is hosted on https://scafi.github.io/web/"
+
+    [params.information]
+        enable = true
+
+        [[params.information.list]]
+        title = "Papers"
+        [[params.information.list.items]]
+        details = "2018 · Lorem Ipsum"
+        [[params.information.list.items]]
+        details = "2016 · Sed Fringilla"
+
+        [[params.information.list]]
+        title = "Interests"
+        details = "Climbing, Snowboarding, Photography, Travelling"
+
+    [params.social]
+        enable = true
+
+        [[params.social.list]]
+        icon = "fab fa-github-square"
+        url = "//github.com/cric96"
+        title = "cric96"
+        
+        [[params.social.list]]
+        icon = "fab fa-stack-overflow"
+        url = "https://stackoverflow.com/users/10295847/gianluca-aguzzi"
+        title = "gianluca-aguzzi"
+            
+        [[params.social.list]]
+        icon = "fab fa-gitlab"
+        url = "https://gitlab.com/gianluca.aguzzi"
+        title = "gianluca.aguzzi"
+    [params.footer]
+        copyright = ""
