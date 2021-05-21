@@ -3,7 +3,7 @@
 baseURL = "https://cric96.github.io/resume/"
 languageCode = "en"
 title = "GA Resume"
-theme = ["hugo-devresume-theme", "hugo-cite"]
+theme = ["hugo-resume", "hugo-cite"]
 
 [params]
     author = "Gianluca Aguzzi"
