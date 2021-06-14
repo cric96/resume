@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - master  # Set a branch name to trigger deployment
-  schedule:
-    # * is a special character in YAML so you have to quote this string
-    - cron:  '27 4 * * *'
   workflow_dispatch:
 
 jobs:
