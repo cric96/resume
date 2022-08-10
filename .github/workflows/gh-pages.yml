@@ -8,13 +8,14 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
         with:
           submodules: true  # Fetch Hugo themes (true OR recursive)
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
-      
+      - name: Update with remote article reference
+        run: git submodule update --remote --merge
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
