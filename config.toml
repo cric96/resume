@@ -95,6 +95,17 @@ theme = ["hugo-resume", "hugo-cite"]
         text = "I am a PhD student in Computer Science at the Department of Computer Science and Engineering of the University of Bologna (Italy). My main research interests include software engineering, pervasive systems, and multi-agent reinforcement learning."
     [params.experience]
         enable = true
+         [[params.experience.list]]
+        title = "Tutor @ Paradigmi di Progettazione e Sviluppo (PPS)"
+        dates = "2022"
+        company = "Università di Bologna -- ALMA MATER STUDIORUM"
+        details = "Details @ https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/412597"
+        
+        [[params.experience.list]]
+        title = "Tutor @ Concurrent & Distributed Programming (PCD)"
+        dates = "2022"
+        company = "Università di Bologna -- ALMA MATER STUDIORUM"
+        details = "Details @ https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/412598"
 
         [[params.experience.list]]
         title = "Teacher the coding courses"
@@ -119,7 +130,19 @@ theme = ["hugo-resume", "hugo-cite"]
         meta = "Co-Mantainer"
         tagline = "ScaFi (https://github.com/scafi/) is a toolkit for developing Aggregate Computing applications."
         
-        
+    [params.international]
+        enable = true
+
+        [[params.international.list]]
+        title = "Student Volunteer @ ICDCS"
+        dates = "2022"
+        [[params.international.list]]
+        title = "Artefact Evaluation Committe @ COORDINATION"
+        dates = "2022"
+        [[params.international.list]]
+        title = "Artefact Evaluation Committe @ ACSOS"
+        dates = "2021"
+       
     [params.pubblications]
         enable = true
 
