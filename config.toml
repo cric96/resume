@@ -92,10 +92,7 @@ theme = ["hugo-resume", "hugo-cite"]
 
     [params.summary]
         enable = true
-        text = "I am a PhD student in Computer Science and my current interests 
-        concern complex large scale and distributed systems, 
-        multi-agent learning and reinforcement learning. 
-        I am also focused on software development & engineering"
+        text = "I am a PhD student in Computer Science at the Department of Computer Science and Engineering of the University of Bologna (Italy). My main research interests include software engineering, pervasive systems, and multi-agent reinforcement learning."
     [params.experience]
         enable = true
 
