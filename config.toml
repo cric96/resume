@@ -132,15 +132,18 @@ theme = ["hugo-resume", "hugo-cite"]
         
     [params.international]
         enable = true
-
+        
         [[params.international.list]]
-        title = "Student Volunteer @ ICDCS"
+        title = "Student Volunteer @ ACSOS 2022"
         dates = "2022"
         [[params.international.list]]
-        title = "Artefact Evaluation Committe @ COORDINATION"
+        title = "Student Volunteer @ ICDCS 2022"
         dates = "2022"
         [[params.international.list]]
-        title = "Artefact Evaluation Committe @ ACSOS"
+        title = "Artefact Evaluation Committe @ COORDINATION 2022"
+        dates = "2022"
+        [[params.international.list]]
+        title = "Artefact Evaluation Committe @ ACSOS 2021"
         dates = "2021"
        
     [params.pubblications]
