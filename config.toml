@@ -92,7 +92,7 @@ theme = ["hugo-resume", "hugo-cite"]
 
     [params.summary]
         enable = true
-        text = "I am a PhD student in Computer Science at the Department of Computer Science and Engineering of the University of Bologna (Italy). My main research interests include software engineering, pervasive systems, and multi-agent reinforcement learning."
+        text = "I am a PhD student in Computer Science at the Department of Computer Science and Engineering of the University of Bologna (Italy). My main research interests include software engineering, pervasive systems, and multi-agent reinforcement learning. Particularly, In my PhD, I will follow a language-based engineering approach for Cyber-Physical Swarm -- and multi-agent systems in which system-wide goals are pursued with collective behaviours. My research ranges from multi-agent learning, distributed algorithms and engineering methodologies, with the goal of finding a systematic methodology to synthesise and deploy self-organising behaviours of predictable outcomes for CPSW. In this direction, I explore a collective reinforcement learning approach for program sketching and a distributed and reinforcement-based distributed scheduler for aggregate computing. For more details, please look at bibliography."
     [params.experience]
         enable = true
          [[params.experience.list]]
