@@ -96,8 +96,7 @@ theme = ["hugo-resume", "hugo-cite"]
 
     [params.summary]
         enable = true
-        text = "I am a Postdoctoral research in Computer Science at the Department of Computer Science and Engineering of the University of Bologna (Italy). 
-        My research ranges from multi-agent learning, aggregate computing, distributed algorithms and engineering methodologies, with the goal of finding a systematic procedure to synthesise and deploy self-organising behaviours of predictable outcomes for CPSW. For more details, please look at bibliography."
+        text = "I am a Postdoctoral research in Computer Science at the Department of Computer Science and Engineering of the University of Bologna (Italy). My research ranges from multi-agent learning, aggregate computing, distributed algorithms and engineering methodologies, with the goal of finding a systematic procedure to synthesise and deploy self-organising behaviours of predictable outcomes for CPSW. For more details, please look at bibliography."
     [params.experience]
         enable = true
         [[params.experience.list]]
@@ -122,9 +121,7 @@ theme = ["hugo-resume", "hugo-cite"]
         title = "Tutor in coding training courses for teachers"
         dates = "2019 - 2019"
         company = "Criad Coding"
-        details = "In this experience, I paired a professional teacher in classes composed of people with a different background and of a different age. I was also responsible for the development of the course material and the management of the course itself. This experience has allowed me to develop my communication skills and my ability to adapt to different situations."
-
-        "
+        details = "In this experience, I paired a professional teacher in classes composed of people with a different background and of a different age. I was also responsible for the development of the course material and the management of the course itself. This experience has allowed me to develop my communication skills and my ability to adapt to different situations."        "
     [params.projects]
         enable = true
 
@@ -142,17 +139,11 @@ theme = ["hugo-resume", "hugo-cite"]
         enable = true
         
         [[params.international.list]]
-        title = "Student Volunteer @ ACSOS 2022"
+        title = "Student Volunteer @ ACSOS, ICDCS"
         dates = "2022"
         [[params.international.list]]
-        title = "Student Volunteer @ ICDCS 2022"
-        dates = "2022"
-        [[params.international.list]]
-        title = "Artefact Evaluation Committe @ COORDINATION 2022"
-        dates = "2022"
-        [[params.international.list]]
-        title = "Artefact Evaluation Committe @ ACSOS 2021"
-        dates = "2021"
+        title = "Artefact Evaluation Committe @ COORDINATION, ACSOS, PerCOM"
+        dates = "2022-2024"
        
     [params.pubblications]
         enable = true
