@@ -7,7 +7,7 @@ theme = ["hugo-resume", "hugo-cite"]
 
 [params]
     author = "Gianluca Aguzzi"
-    description = "Dev resume"
+    description = "Research resume"
 
 
     primaryColor = "#f57c00"
@@ -16,7 +16,7 @@ theme = ["hugo-resume", "hugo-cite"]
     [params.profile]
         enable = true
         name = "Gianluca Aguzzi"
-        tagline = "PhD Student"
+        tagline = "Postdoctoral Researcher"
         avatar = "me.jpeg"
 
     [params.contact]
@@ -29,8 +29,8 @@ theme = ["hugo-resume", "hugo-cite"]
         text = "gianluca.aguzzi@unibo.it"
         [[params.contact.list]]
         icon = "fas fa-globe"
-        url = "https://cric96.github.io/"
-        text = "https://cric96.github.io/"
+        url = "https://www.unibo.it/sitoweb/gianluca.aguzzi/en"
+        text = "https://www.unibo.it/sitoweb/gianluca.aguzzi/en"
 
     [params.skills]
         enable = true
@@ -55,7 +55,11 @@ theme = ["hugo-resume", "hugo-cite"]
 
     [params.education]
         enable = true
-
+        [[params.education.list]]
+        degree = "PhD in Computer Science and Software Engineering"
+        university = "Alma Mater Studiorum"
+        dates = "2020 - 2023"
+        vote = "with distiction"
         [[params.education.list]]
         degree = "MSc in Computer Science and Software Engineering"
         university = "Alma Mater Studiorum"
@@ -64,7 +68,7 @@ theme = ["hugo-resume", "hugo-cite"]
         [[params.education.list]]
         degree = "BSc in Computer Science and Software Engineering"
         university = "Alma Mater Studiorum"
-        dates = "2015 - 2019"
+        dates = "2015 - 2018"
         vote = "110 cum laude"
 
 
@@ -92,31 +96,35 @@ theme = ["hugo-resume", "hugo-cite"]
 
     [params.summary]
         enable = true
-        text = "I am a PhD student in Computer Science at the Department of Computer Science and Engineering of the University of Bologna (Italy). My main research interests include software engineering, pervasive systems, and multi-agent reinforcement learning. Particularly, In my PhD, I will follow a language-based engineering approach for Cyber-Physical Swarm---multi-agent systems in which system-wide goals are pursued with collective behaviours. My research ranges from multi-agent learning, distributed algorithms and engineering methodologies, with the goal of finding a systematic procedure to synthesise and deploy self-organising behaviours of predictable outcomes for CPSW. In this direction, I explore a collective reinforcement learning approach for program sketching and a distributed and reinforcement-based distributed scheduler for aggregate computing. For more details, please look at bibliography."
+        text = "I am a Postdoctoral research in Computer Science at the Department of Computer Science and Engineering of the University of Bologna (Italy). 
+        My research ranges from multi-agent learning, aggregate computing, distributed algorithms and engineering methodologies, with the goal of finding a systematic procedure to synthesise and deploy self-organising behaviours of predictable outcomes for CPSW. For more details, please look at bibliography."
     [params.experience]
         enable = true
-         [[params.experience.list]]
+        [[params.experience.list]]
+        title = "Adjunt Professor @ Software Design and Development (PSS)"
+        dates = "2023-2024"
+        company = "Università di Bologna -- ALMA MATER STUDIORUM"
+        details = "Details @ https://www.unibo.it/en/study/phd-professional-masters-specialisation-schools-and-other-programmes/course-unit-catalogue/course-unit/2024/498808"
+
+        [[params.experience.list]]
         title = "Tutor @ Paradigmi di Progettazione e Sviluppo (PPS)"
-        dates = "2022"
+        dates = "2022-2024"
         company = "Università di Bologna -- ALMA MATER STUDIORUM"
         details = "Details @ https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2022/412597"
         
         [[params.experience.list]]
         title = "Tutor @ Concurrent & Distributed Programming (PCD)"
-        dates = "2022"
+        dates = "2022-2024"
         company = "Università di Bologna -- ALMA MATER STUDIORUM"
         details = "Details @ https://www.unibo.it/it/didattica/insegnamenti/insegnamento/2021/412598"
 
         [[params.experience.list]]
-        title = "Teacher the coding courses"
-        dates = "2019 - 2019"
-        company = "Criad Coding"
-        details = "As a primary school teacher, I taught children the main computational thinking, namely a set of problem-solving methods that involve expressing problems and their solutions in ways that a computer could also execute. It was such a great experience in which I improved my speaking and storytelling capabilities."
-        [[params.experience.list]]
         title = "Tutor in coding training courses for teachers"
         dates = "2019 - 2019"
         company = "Criad Coding"
-        details = "In this experience, I paired a professional teacher in classes composed of people with a different background and of a different age. This work helps me to improve my improvisation and teamwork capabilities"
+        details = "In this experience, I paired a professional teacher in classes composed of people with a different background and of a different age. I was also responsible for the development of the course material and the management of the course itself. This experience has allowed me to develop my communication skills and my ability to adapt to different situations."
+
+        "
     [params.projects]
         enable = true
 
