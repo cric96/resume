@@ -121,7 +121,7 @@ theme = ["hugo-resume", "hugo-cite"]
         title = "Tutor in coding training courses for teachers"
         dates = "2019 - 2019"
         company = "Criad Coding"
-        details = "In this experience, I paired a professional teacher in classes composed of people with a different background and of a different age. I was also responsible for the development of the course material and the management of the course itself. This experience has allowed me to develop my communication skills and my ability to adapt to different situations."        "
+        details = "In this experience, I paired a professional teacher in classes composed of people with a different background and of a different age. I was also responsible for the development of the course material and the management of the course itself. This experience has allowed me to develop my communication skills and my ability to adapt to different situations."
     [params.projects]
         enable = true
 
