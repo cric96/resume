@@ -1,36 +1,16 @@
-%% Start of file `awesome-cv.cls'.
-% Awesome CV Class File
-%
-% This class has been downloaded from:
-% https://github.com/posquit0/Awesome-CV
-%
-% Author:
-% Claud D. Park <posquit0.bj@gmail.com>
-% http://www.posquit0.com
-%
-% Notes:
-% 1) This class file defines the structure and layout of the template file (cv.tex, resume.tex).
-% 2) It has been written in such a way that under most circumstances you
-% should not need to edit it.
-%
-% Class license:
-% LPPL v1.3c (http://www.latex-project.org/lppl)
-%
-
+%% Start of file `awesome-cv-pdflatex.cls'.
+% Awesome CV Class File for pdflatex
+% 
+% Modified to work with pdflatex instead of xelatex.
 
 %-------------------------------------------------------------------------------
 %                Identification
 %-------------------------------------------------------------------------------
-\ProvidesClass{awesome-cv}[2017/02/05 v1.6.1 Awesome Curriculum Vitae Class]
+\ProvidesClass{awesome-cv-pdflatex}[2024/08/26 v1.0.0 Awesome Curriculum Vitae Class for pdflatex]
 \NeedsTeXFormat{LaTeX2e}
-
 
 %-------------------------------------------------------------------------------
 %                Class options
-%
-% (need to be done before the external package loading, for example because
-% we need \paperwidth, \paperheight and \@ptsize to be defined before loading
-% geometry and fancyhdr)
 %-------------------------------------------------------------------------------
 % Options for draft or final
 \DeclareOption{draft}{\setlength\overfullrule{5pt}}
@@ -41,7 +21,6 @@
 }
 \ProcessOptions\relax
 \LoadClass{article}
-
 
 %-------------------------------------------------------------------------------
 %                3rd party packages
@@ -54,12 +33,10 @@
 \RequirePackage{ragged2e}
 % Needed to configure page layout
 \RequirePackage{geometry}
-% Needed to make header & footer effeciently
+% Needed to make header & footer efficiently
 \RequirePackage{fancyhdr}
 % Needed to manage colors
 \RequirePackage{xcolor}
-% Needed to use \ifxetex-\else-\fi statement
-\RequirePackage{ifxetex}
 % Needed to use \if-\then-\else statement
 \RequirePackage{xifthen}
 % Needed to use a toolbox of programming tools
@@ -67,20 +44,21 @@
 % Needed to change line spacing in specific environment
 \RequirePackage{setspace}
 % Needed to manage fonts
-\RequirePackage[quiet]{fontspec}
-% To support LaTeX quoting style
-\defaultfontfeatures{Ligatures=TeX}
-% Needed to manage math fonts
-\RequirePackage{unicode-math}
-% Needed to use icons from font-awesome
-% (https://github.com/posquit0/latex-fontawesome)
-\RequirePackage{fontawesome}
-\RequirePackage[default,opentype]{sourcesanspro}
+\RequirePackage{mathptmx} % Times New Roman as default serif font
+\RequirePackage{helvet}   % Helvetica as default sans serif font
+\RequirePackage{courier}  % Courier as default monospace font
+% Needed to handle font encoding properly
+\RequirePackage[T1]{fontenc}
+\RequirePackage[utf8]{inputenc}
+% Needed to handle mathematics fonts
+\RequirePackage{amsmath}
+% Needed to use icons from fontawesome
+\RequirePackage{fontawesome5}
 % Needed for the photo ID
 \RequirePackage[skins]{tcolorbox}
-% Needed to deal a paragraphs
+% Needed to deal with paragraphs
 \RequirePackage{parskip}
-% Needed to deal hyperlink
+% Needed to deal with hyperlink
 \RequirePackage[hidelinks,unicode]{hyperref}
 \hypersetup{%
   pdftitle={},
@@ -89,14 +67,12 @@
   pdfkeywords={}
 }
 
-
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
 %-------------------------------------------------------------------------------
-% Configure a directory location for fonts(default: 'fonts/')
+% Configure a directory location for fonts (default: 'fonts/')
 \newcommand*{\fontdir}[1][fonts/]{\def\@fontdir{#1}}
 \fontdir
-
 
 %-------------------------------------------------------------------------------
 %                Configuration for layout
@@ -114,7 +90,6 @@
 \fancyhf{}
 % Enable if you want to make header or footer using fancyhdr
 \pagestyle{fancy}
-
 
 %-------------------------------------------------------------------------------
 %                Configuration for colors
@@ -156,32 +131,19 @@
   \ifbool{acvSectionColorHighlight}{{\color{awesome}#1#2#3}}{#1#2#3}%
 }
 
-
 %-------------------------------------------------------------------------------
 %                Configuration for fonts
 %-------------------------------------------------------------------------------
-% Set the FontAwesome font to be up-to-date.
-% \newfontfamily\FA[Path=\@fontdir]{FontAwesome}
-% Set font for header (default is Roboto)
-\newfontfamily\headerfont[
-  Path=\@fontdir,
-  UprightFont=*-Regular,
-  ItalicFont=*-Italic,
-  BoldFont=*-Bold,
-  BoldItalicFont=*-BoldItalic,
-]{Roboto}
+% Replace the fontspec configuration with standard LaTeX fonts
+\renewcommand*{\rmdefault}{ptm} % Times
+\renewcommand*{\sfdefault}{phv} % Helvetica
+\renewcommand*{\ttdefault}{pcr} % Courier
 
-\newfontfamily\headerfontlight[
-  Path=\@fontdir,
-  UprightFont=*-Thin,
-  ItalicFont=*-ThinItalic,
-  BoldFont=*-Medium,
-  BoldItalicFont=*-MediumItalic,
-]{Roboto}
-
-\newcommand*{\footerfont}{\sourcesanspro}
-\newcommand*{\bodyfont}{\sourcesanspro}
-\newcommand*{\bodyfontlight}{\sourcesansprolight}
+\newcommand*{\headerfont}{\sffamily}
+\newcommand*{\headerfontlight}{\sffamily\fontseries{m}\selectfont}
+\newcommand*{\footerfont}{\sffamily}
+\newcommand*{\bodyfont}{\sffamily}
+\newcommand*{\bodyfontlight}{\sffamily\fontseries{m}\selectfont}
 
 %-------------------------------------------------------------------------------
 %                Configuration for styles
@@ -450,8 +412,8 @@
     \ifthenelse{\equal{#1}{L}}{\raggedright}{\ifthenelse{\equal{#1}{R}}{\raggedleft}{\centering}}
     \headerfirstnamestyle{\@firstname}\headerlastnamestyle{{}\acvHeaderNameDelim\@lastname}%
     \\[\acvHeaderAfterNameSkip]%
-    \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position\\[\acvHeaderAfterPositionSkip]}}%
-    \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address\\[\acvHeaderAfterAddressSkip]}}%
+    \ifthenelse{\isundefined{\@position}}{}{\headerpositionstyle{\@position}}%
+    \ifthenelse{\isundefined{\@address}}{}{\headeraddressstyle{\@address}}%
     \headersocialstyle{%
       \newbool{isstart}%
       \setbool{isstart}{true}%
@@ -539,7 +501,7 @@
           \ifbool{isstart}{\setbool{isstart}{false}}{\acvHeaderSocialSep}%
           \@extrainfo%
         }%
-    } \\[\acvHeaderAfterSocialSkip]%
+    } 
     \ifthenelse{\isundefined{\@quote}}%
       {}%
       {\headerquotestyle{\@quote\\}\vspace{\acvHeaderAfterQuoteSkip}}%
@@ -670,15 +632,15 @@
 
 % Define an environment for cvitems(for cventry)
 \newenvironment{cvitems}{%
-  \vspace{-4.0mm}
-  \begin{justify}
-  \begin{itemize}[leftmargin=2ex, nosep, noitemsep]
-    \setlength{\parskip}{0pt}
-    \renewcommand{\labelitemi}{\bullet}
+  %\vspace{-4.0mm}
+  %\begin{justify}
+  \begin{itemize}%[leftmargin=2ex, nosep, noitemsep]
+    %\setlength{\parskip}{0pt}
+    %\renewcommand{\labelitemi}{\bullet}
 }{%
   \end{itemize}
-  \end{justify}
-  \vspace{-4.0mm}
+  %\end{justify}
+  %\vspace{-4.0mm}
 }
 
 
